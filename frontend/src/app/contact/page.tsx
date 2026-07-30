@@ -119,7 +119,8 @@ export default function ContactPage() {
                   icon: "📍",
                   title: "Lokasi",
                   value: "Indonesia",
-                  description: "Bisa bekerja sama secara remote maupun offline.",
+                  description:
+                    "Bisa bekerja sama secara remote maupun offline.",
                 },
               ].map((item) => (
                 <div
@@ -148,13 +149,18 @@ export default function ContactPage() {
             <div className="p-6 rounded-2xl bg-gray-900/50 border border-gray-800/50">
               <h3 className="text-white font-semibold mb-4">Social Media</h3>
               <div className="flex gap-3">
-                {["GitHub", "LinkedIn", "Instagram"].map((social) => (
+                {[
+                  { label: "Github", url: "https://github.com/i-Kail-I" },
+                  { label: "Instagram", url: "https://www.instagram.com/kaiil._/" },
+                  { label: "LinkdIn", url: "https://www.linkedin.com/in/mikail-arianos-30a268356/" },
+                ].map((social, i) => (
                   <a
-                    key={social}
-                    href="#"
+                    key={i}
+                    href={social.url}
+                    target="_blank"
                     className="px-4 py-2 rounded-xl bg-gray-800/50 border border-gray-700/50 text-gray-400 text-sm hover:text-white hover:border-indigo-500/30 transition-all duration-300"
                   >
-                    {social}
+                    {social.label}
                   </a>
                 ))}
               </div>
