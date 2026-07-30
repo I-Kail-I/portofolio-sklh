@@ -25,7 +25,7 @@ export default function AboutPage() {
 
             <div className="w-full space-y-3">
               {[
-                { label: "Nama", value: "Muh Elzhar Ramadhan" },
+                { label: "Nama", value: "Mikail Arianos" },
                 { label: "Kelas", value: "XII RPL 1" },
                 { label: "Sekolah", value: "SMK TELKOM MAKASSAR" },
                 { label: "Lokasi", value: "Indonesia" },

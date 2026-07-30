@@ -22,7 +22,7 @@ export default function Home() {
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight mb-6">
             <span className="text-white">Halo, saya</span>{" "}
             <span className="bg-gradient-to-r from-indigo-400 via-violet-400 to-purple-400 bg-clip-text text-transparent">
-              Muh Elzhar Ramadhan
+              Mikail Arianos
             </span>
           </h1>
 

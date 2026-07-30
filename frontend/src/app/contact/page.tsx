@@ -1,4 +1,3 @@
-// ...existing code...
 export default function ContactPage() {
   return (
     <section className="py-16 sm:py-20">
@@ -106,7 +105,7 @@ export default function ContactPage() {
                 {
                   icon: "📧",
                   title: "Email",
-                  value: "muhelzhar007@gmail.com",
+                  value: "arianosmikail5@gmail.com",
                   description:
                     "Kirim email kapan saja, saya akan membalasnya secepatnya.",
                 },
