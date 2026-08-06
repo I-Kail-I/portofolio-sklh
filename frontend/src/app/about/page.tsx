@@ -20,7 +20,7 @@ export default function AboutPage() {
           {/* Ini photo dan info */}
           <div className="flex flex-col items-center lg:items-start gap-6">
             <div className="w-48 h-48 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-violet-500/20 border border-gray-800/50 flex items-center justify-center">
-              <span className="text-6xl">👤</span>
+              <img src="foto.JPG" className="mb-10" />
             </div>
 
             <div className="w-full space-y-3">
