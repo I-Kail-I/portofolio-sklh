@@ -5,12 +5,18 @@ const quickLinks = [
   { href: "/about", label: "About" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/contact", label: "Contact" },
+  { href: "/certificates", label: "certificates" },
+  { href: "/skills", label: "skills" },
+  { href: "/testimonials", label: "testimonials" },
 ];
 
 const socialLinks = [
-  { href: "#", label: "GitHub" },
-  { href: "#", label: "LinkedIn" },
-  { href: "#", label: "Instagram" },
+  { href: "github.com/i-kail-i", label: "GitHub" },
+  { href: "https://www.instagram.com/kaiil._/", label: "LinkedIn" },
+  {
+    href: "https://www.linkedin.com/in/mikail-arianos-30a268356/",
+    label: "Instagram",
+  },
 ];
 
 export default function Footer() {
@@ -72,7 +78,9 @@ export default function Footer() {
           <p className="text-gray-500 text-sm">
             © {new Date().getFullYear()} MyPortfolio. All rights reserved.
           </p>
-          <p className="text-gray-600 text-xs">Built with Next.js & Tailwind CSS</p>
+          <p className="text-gray-600 text-xs">
+            Built with Next.js & Tailwind CSS
+          </p>
         </div>
       </div>
     </footer>

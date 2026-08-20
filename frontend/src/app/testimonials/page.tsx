@@ -1,9 +1,9 @@
 const testimonials = [
   {
     id: 1,
-    name: "Ahmad Dahlan, S.T.",
+    name: "Lalu. S.K.",
     role: "Kepala Jurusan RPL",
-    company: "SMK Negeri 1",
+    company: "SMK TELKOM MAKASSAR",
     avatar: "AD",
     stars: 5,
     quote:
@@ -11,9 +11,9 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Siti Rahma, M.Kom.",
+    name: "Bu Rani.",
     role: "Guru Produktif Web",
-    company: "SMK Negeri 1",
+    company: "SMK TELKOM MAKASSAR",
     avatar: "SR",
     stars: 5,
     quote:
@@ -27,7 +27,8 @@ export default function TestimonialPage() {
       <div className="text-center mb-12">
         <h1 className="text-3xl font-bold text-white mb-4">Testimonials</h1>
         <p className="text-gray-400 max-w-2xl mx-auto">
-          Apa kata para pengajar dan rekan sejawat mengenai dedikasi, keterampilan, dan kerja sama tim saya saat berkolaborasi.
+          Apa kata para pengajar dan rekan sejawat mengenai dedikasi,
+          keterampilan, dan kerja sama tim saya saat berkolaborasi.
         </p>
       </div>
 

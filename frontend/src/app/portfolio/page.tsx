@@ -16,10 +16,10 @@ const projects = [
     id: 2,
     title: "Attendance & Face Detection",
     category: "Mobile",
-    description: "Mobile application for employee attendance tracking with face detection.",
+    description: "Mobile application for employee attendance tracking with face detection di UI.",
     tech: ["React Native", "Expo", "Firebase"],
     demoUrl: "https://demo.example.com",
-    githubUrl: "https://github.com/example/attendance",
+    githubUrl: "https://github.com/I-Kail-I/logbook-project",
   },
   {
     id: 3,
