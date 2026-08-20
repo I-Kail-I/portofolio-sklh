@@ -1,23 +1,5 @@
 import Link from "next/link";
-
-const quickLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/portfolio", label: "Portfolio" },
-  { href: "/contact", label: "Contact" },
-  { href: "/certificates", label: "certificates" },
-  { href: "/skills", label: "skills" },
-  { href: "/testimonials", label: "testimonials" },
-];
-
-const socialLinks = [
-  { href: "github.com/i-kail-i", label: "GitHub" },
-  { href: "https://www.instagram.com/kaiil._/", label: "LinkedIn" },
-  {
-    href: "https://www.linkedin.com/in/mikail-arianos-30a268356/",
-    label: "Instagram",
-  },
-];
+import { quickLinks, footerSocialLinks } from "@/data/mockData";
 
 export default function Footer() {
   return (
@@ -57,7 +39,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-3">Social Media</h4>
             <ul className="space-y-2">
-              {socialLinks.map((link) => (
+              {footerSocialLinks.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}

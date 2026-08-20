@@ -1,47 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
-const projects = [
-  {
-    id: 1,
-    title: "E-Commerce Application",
-    category: "Web Dev",
-    description: "A full featured commerce app with cart & checkout system.",
-    tech: ["Next.js", "Tailwind CSS", "TypeScript"],
-    demoUrl: "https://demo.example.com",
-    githubUrl: "https://github.com/example/ecommerce",
-  },
-  {
-    id: 2,
-    title: "Attendance & Face Detection",
-    category: "Mobile",
-    description: "Mobile application for employee attendance tracking with face detection di UI.",
-    tech: ["React Native", "Expo", "Firebase"],
-    demoUrl: "https://demo.example.com",
-    githubUrl: "https://github.com/I-Kail-I/logbook-project",
-  },
-  {
-    id: 3,
-    title: "School Management System",
-    category: "Web Dev",
-    description: "Web application for managing school data and student grades.",
-    tech: ["Next.js", "Tailwind CSS", "PostgreSQL"],
-    demoUrl: "https://demo.example.com",
-    githubUrl: "https://github.com/example/school-sys",
-  },
-  {
-    id: 4,
-    title: "Personal Landing Page",
-    category: "UI/UX",
-    description: "Modern landing page design with smooth animations.",
-    tech: ["Figma", "Tailwind CSS", "Framer Motion"],
-    demoUrl: "https://demo.example.com",
-    githubUrl: "https://github.com/example/landing-page",
-  },
-];
-
-const categories = ["All", "Web Dev", "Mobile", "UI/UX"];
+import { projects, projectCategories } from "@/data/mockData";
 
 export default function PortfolioPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -62,7 +22,7 @@ export default function PortfolioPage() {
 
       {/* Filter Buttons */}
       <div className="flex flex-wrap justify-center gap-3 mb-10">
-        {categories.map((category) => (
+        {projectCategories.map((category) => (
           <button
             key={category}
             onClick={() => setSelectedCategory(category)}

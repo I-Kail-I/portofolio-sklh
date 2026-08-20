@@ -1,3 +1,5 @@
+import { profileInfo, education } from "@/data/mockData";
+
 export default function AboutPage() {
   return (
     <section className="py-16 sm:py-20">
@@ -24,12 +26,7 @@ export default function AboutPage() {
             </div>
 
             <div className="w-full space-y-3">
-              {[
-                { label: "Nama", value: "Mikail Arianos" },
-                { label: "Kelas", value: "XII RPL 1" },
-                { label: "Sekolah", value: "SMK TELKOM MAKASSAR" },
-                { label: "Lokasi", value: "Indonesia" },
-              ].map((item) => (
+              {profileInfo.map((item) => (
                 <div
                   key={item.label}
                   className="flex items-center justify-between p-3 rounded-xl bg-gray-900/50 border border-gray-800/50"
@@ -92,37 +89,33 @@ export default function AboutPage() {
           </h2>
 
           <div className="max-w-2xl mx-auto space-y-6">
-            {/* timeline 1 */}
-            <div className="relative pl-8 border-l-2 border-indigo-500/30">
-              <div className="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-indigo-500 border-4 border-gray-950" />
-              <div className="p-5 rounded-xl bg-gray-900/50 border border-gray-800/50">
-                <span className="text-xs text-indigo-400 font-medium">
-                  2024 — Sekarang
-                </span>
-                <h3 className="text-white font-semibold mt-1">
-                  SMK ... — XII RPL 1
-                </h3>
-                <p className="text-gray-400 text-sm mt-1">
-                  Mempelajari pemrograman web, mobile, dan desktop. Fokus
-                  pada pengembangan fullstack web application.
-                </p>
+            {education.map((edu) => (
+              <div
+                key={edu.title}
+                className={`relative pl-8 border-l-2 ${
+                  edu.active ? "border-indigo-500/30" : "border-gray-800/50"
+                }`}
+              >
+                <div
+                  className={`absolute -left-2.5 top-0 w-5 h-5 rounded-full border-4 border-gray-950 ${
+                    edu.active ? "bg-indigo-500" : "bg-gray-700"
+                  }`}
+                />
+                <div className="p-5 rounded-xl bg-gray-900/50 border border-gray-800/50">
+                  <span
+                    className={`text-xs font-medium ${
+                      edu.active ? "text-indigo-400" : "text-gray-500"
+                    }`}
+                  >
+                    {edu.period}
+                  </span>
+                  <h3 className="text-white font-semibold mt-1">{edu.title}</h3>
+                  <p className="text-gray-400 text-sm mt-1">
+                    {edu.description}
+                  </p>
+                </div>
               </div>
-            </div>
-
-            {/* timeline 2 */}
-            <div className="relative pl-8 border-l-2 border-gray-800/50">
-              <div className="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-gray-700 border-4 border-gray-950" />
-              <div className="p-5 rounded-xl bg-gray-900/50 border border-gray-800/50">
-                <span className="text-xs text-gray-500 font-medium">
-                  2021 — 2024
-                </span>
-                <h3 className="text-white font-semibold mt-1">SMP ...</h3>
-                <p className="text-gray-400 text-sm mt-1">
-                  Masa SMP dimana mulai tertarik dengan dunia teknologi dan
-                  komputer.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

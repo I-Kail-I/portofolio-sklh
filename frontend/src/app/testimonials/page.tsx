@@ -1,25 +1,4 @@
-const testimonials = [
-  {
-    id: 1,
-    name: "Lalu. S.K.",
-    role: "Kepala Jurusan RPL",
-    company: "SMK TELKOM MAKASSAR",
-    avatar: "AD",
-    stars: 5,
-    quote:
-      "Siswa yang sangat berdedikasi dan memiliki pemahaman mendalam tentang konsep modern web development. Hasil kodingannya selalu bersih dan rapi.",
-  },
-  {
-    id: 2,
-    name: "Bu Rani.",
-    role: "Guru Produktif Web",
-    company: "SMK TELKOM MAKASSAR",
-    avatar: "SR",
-    stars: 5,
-    quote:
-      "Selalu menyelesaikan tugas proyek tepat waktu dengan kualitas UI/UX yang sangat menarik dan fungsionalitas yang teruji.",
-  },
-];
+import { testimonials } from "@/data/mockData";
 
 export default function TestimonialPage() {
   return (
@@ -50,7 +29,7 @@ export default function TestimonialPage() {
 
               {/* Quote Block */}
               <blockquote className="text-gray-300 italic leading-relaxed text-sm mb-6">
-                "{test.quote}"
+                “{test.quote}”
               </blockquote>
             </div>
 

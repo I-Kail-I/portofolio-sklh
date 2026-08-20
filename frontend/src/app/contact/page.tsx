@@ -1,3 +1,5 @@
+import { contactInfo, contactSocialLinks } from "@/data/mockData";
+
 export default function ContactPage() {
   return (
     <section className="py-16 sm:py-20">
@@ -101,28 +103,7 @@ export default function ContactPage() {
           {/* Info kontak */}
           <div className="space-y-6">
             <div className="space-y-4">
-              {[
-                {
-                  icon: "📧",
-                  title: "Email",
-                  value: "arianosmikail5@gmail.com",
-                  description:
-                    "Kirim email kapan saja, saya akan membalasnya secepatnya.",
-                },
-                {
-                  icon: "📱",
-                  title: "Telepon",
-                  value: "+62 823-9941-0288",
-                  description: "Tersedia di jam sekolah (08.00 - 15.00 WIB).",
-                },
-                {
-                  icon: "📍",
-                  title: "Lokasi",
-                  value: "Indonesia",
-                  description:
-                    "Bisa bekerja sama secara remote maupun offline.",
-                },
-              ].map((item) => (
+              {contactInfo.map((item) => (
                 <div
                   key={item.title}
                   className="group p-6 rounded-2xl bg-gray-900/50 border border-gray-800/50 hover:border-indigo-500/30 transition-all duration-300"
@@ -149,11 +130,7 @@ export default function ContactPage() {
             <div className="p-6 rounded-2xl bg-gray-900/50 border border-gray-800/50">
               <h3 className="text-white font-semibold mb-4">Social Media</h3>
               <div className="flex gap-3">
-                {[
-                  { label: "Github", url: "https://github.com/i-Kail-I" },
-                  { label: "Instagram", url: "https://www.instagram.com/kaiil._/" },
-                  { label: "LinkdIn", url: "https://www.linkedin.com/in/mikail-arianos-30a268356/" },
-                ].map((social, i) => (
+                {contactSocialLinks.map((social, i) => (
                   <a
                     key={i}
                     href={social.url}

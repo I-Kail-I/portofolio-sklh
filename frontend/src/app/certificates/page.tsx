@@ -1,32 +1,4 @@
-const certificates = [
-  {
-    id: 1,
-    title: "JavaScript Essentials 2",
-    issuer: "Cisco",
-    date: "June 11, 2026",
-    credentialId: "Cert ID: 92a2f8bd-dd1d-456e-b46b-1a1003eb0467",
-    verificationUrl:
-      "https://www.credly.com/badges/f7a98a24-4e8f-4352-81aa-f6b762fb4a11/public_url",
-  },
-  {
-    id: 2,
-    title: "JavaScript Essentials 2",
-    issuer: "Cisco",
-    date: "June 11, 2026",
-    credentialId: "Cert ID: 92a2f8bd-dd1d-456e-b46b-1a1003eb0467",
-    verificationUrl:
-      "https://www.credly.com/badges/f7a98a24-4e8f-4352-81aa-f6b762fb4a11/public_url",
-  },
-  {
-    id: 3,
-    title: "JavaScript Essentials 2",
-    issuer: "Cisco",
-    date: "June 11, 2026",
-    credentialId: "Cert ID: 92a2f8bd-dd1d-456e-b46b-1a1003eb0467",
-    verificationUrl:
-      "https://www.credly.com/badges/f7a98a24-4e8f-4352-81aa-f6b762fb4a11/public_url",
-  },
-];
+import { certificates } from "@/data/mockData";
 
 export default function CertificatePage() {
   return (

@@ -1,33 +1,4 @@
-const skillGroups = [
-  {
-    title: "Frontend Development",
-    icon: "💻",
-    skills: [
-      { name: "HTML / CSS", level: "Advanced", percentage: 90 },
-      { name: "JavaScript / TypeScript", level: "Advanced", percentage: 85 },
-      { name: "React.js / Next.js", level: "Intermediate", percentage: 80 },
-      { name: "Tailwind CSS", level: "Advanced", percentage: 90 },
-    ],
-  },
-  {
-    title: "Backend Development",
-    icon: "⚙️",
-    skills: [
-      { name: "Node.js / Express", level: "Intermediate", percentage: 75 },
-      { name: "PostgreSQL / MySQL", level: "Intermediate", percentage: 70 },
-      { name: "RESTful API", level: "Advanced", percentage: 85 },
-    ],
-  },
-  {
-    title: "Tools & Workflow",
-    icon: "🛠️",
-    skills: [
-      { name: "Git / GitHub", level: "Advanced", percentage: 85 },
-      { name: "Figma (UI/UX)", level: "Intermediate", percentage: 75 },
-      { name: "Docker", level: "Beginner", percentage: 50 },
-    ],
-  },
-];
+import { skillGroups } from "@/data/mockData";
 
 export default function SkillsPage() {
   return (
